@@ -1,0 +1,38 @@
+#body {
+	background-image: url('http://www.vladtime.ru/uploads/posts/2016-12/1481782623_sergej-shnurov-71213216.jpg');
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	font-family: 'Indie Flower', cursive;
+	color: #353b48;
+}
+
+#countdown {
+	font-size: 30px;
+}
+
+#homeRsvp {
+	background-color: #8e44ad;
+	margin-top: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	color: white;
+}
+
+#weddingRsvp {
+	width: 50%;
+	background-color: #3498db;
+	height: 40px;
+	border-radius: 5px;
+	padding-top: 2%;
+	margin-bottom: 5%;
+}
+
+#babyRsvp {
+	width: 50%;
+	background-color: #ff7979;
+	height: 40px;
+	border-radius: 5px;
+	padding-top: 2%;
+}

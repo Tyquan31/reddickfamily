@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(id="body")
+    div(class="container")
+      h2(class="mainText") Count Down To Rena's Arrival
+      div(id="countdown")
+      h4 August 21st 2018
+  div(class="container")
+    div(class="row")
+      div(class="col")
+        img(src="http://musicplusfaith.com/wp-content/uploads/2013/06/top-christian-wedding-songs.jpg" class="img-fluid")
+      div(class="col")
+        img(src="/images/babyshowerInvite2.png" class="img-fluid")
+      div(class="col")
+        <div id="homeRsvp">
+          <center>
+            <h4>Click to RSVP</h4>
+            <div id="weddingRsvp">Wedding RSVP</div>
+            <div id="babyRsvp">Baby Shower RSVP</div>
+          </center>
+        </div>
+  script(src="/js/countdown.js")
