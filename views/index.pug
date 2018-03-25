@@ -8,16 +8,40 @@ block content
       h4 August 21st 2018
   div(class="container")
     div(class="row")
-      div(class="col")
-        img(src="http://musicplusfaith.com/wp-content/uploads/2013/06/top-christian-wedding-songs.jpg" class="img-fluid")
-      div(class="col")
-        img(src="/images/babyshowerInvite2.png" class="img-fluid")
-      div(class="col")
-        <div id="homeRsvp">
-          <center>
-            <h4>Click to RSVP</h4>
-            <div id="weddingRsvp">Wedding RSVP</div>
-            <div id="babyRsvp">Baby Shower RSVP</div>
-          </center>
-        </div>
+      div(class="col-md-4")
+        a(class="nav-link" href="/wedding" id="logo")
+          img(src="http://musicplusfaith.com/wp-content/uploads/2013/06/top-christian-wedding-songs.jpg" class="img-fluid")
+      div(class="col-md-4")
+        a(class="nav-link" href="/babyshower" id="logo")
+          img(src="/images/babyshowerInvite2.png" class="img-fluid")
+      div(class="col-md-4")
+        div(id="homeRsvp")
+          center
+            h4 Click to RSVP
+            div(id="weddingRsvp" data-toggle="modal" data-target="#weddingModal") Wedding RSVP
+            div(class="modal fade" id="weddingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+              div(class="modal-dialog" role="document")
+                div(class="modal-content")
+                  div(class="modal-header")
+                    h5(class="modal-title" id="exampleModalLabel") Wedding RSVP
+                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true") &times;
+                  div(class="modal-body")
+                    form(action="/rsvp/wedding" method="POST")
+                      label(for="name") Full Name
+                      input(type="text" name="name" required)
+                      br
+                      label(for="name") Email
+                      input(type="email" name="email")
+                      br
+                      h4 Are you bringing any guests?
+                      label(for="adultGuests") How many adults?
+                      input(type="number" name="adultGuests")
+                      br
+                      label(for="childGuests") How many children?
+                      input(type="number" name="childGuests")
+                  div(class="modal-footer")
+                    button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+                    button(type="button" class="btn btn-primary") Send
+            div(id="babyRsvp" data-toggle="modal" data-target="#babyModal") Baby Shower RSVP
   script(src="/js/countdown.js")
