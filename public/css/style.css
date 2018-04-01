@@ -44,3 +44,156 @@
 #babyModal {
 	color: black;
 }
+
+@media screen and (min-width: 480px) {
+	#margy {
+		margin-bottom: 20%;
+	}
+	
+	#splash {
+		padding-top: 20%;
+	}
+
+	.mainText {
+		text-align: center;
+		padding-top: 5%;
+		font-weight: bold;
+		color: #eb4d4b;
+		text-shadow: 2px 2px #130f40;
+	}
+	#countdown {
+		text-align: center;
+		padding-top: 5%;
+		font-weight: bold;
+		color: #eb4d4b;
+		text-shadow: 2px 2px #130f40;
+	}
+    #weddingBody {
+		background-image: url('https://hdwallsource.com/img/2014/5/beautiful-wedding-background-18437-18904-hd-wallpapers.jpg');
+		background-position: center top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		font-family: 'Playfair Display', serif;
+		color: #353b48;
+	}
+	#imgGallery {
+	    -ms-flex: 25%; /* IE10 */
+	    flex: 25%;
+	    max-width: 25%;
+	    padding: 0 4px;
+	}
+
+	#imgGallery img {
+	    margin-top: 8px;
+	    vertical-align: middle;
+	}
+	#imgGallery {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    #us {
+		background-image: url('/images/wedding/IMG_4859.JPG');
+		background-position: center top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 500px;
+		font-family: 'Playfair Display', serif;
+		color: white;
+	}
+
+	#img {
+		-webkit-transform: rotate(90deg);
+  		transform: rotate(90deg);
+	}
+
+	.super {
+		font-family: 'Philosopher', sans-serif;
+	}
+	#breath {
+		margin-top: 10%;
+	}
+	#breather {
+		margin-bottom: 15%;
+	}
+
+	#footer {
+		background-color: #c56cf0;
+		color: white;
+		padding-top: 2%;
+	}
+	#nav {
+		background-color: #c56cf0;
+		color: white;
+	}
+	.navbar-brand {
+		color: white;
+	}
+	.navbar-toggler {
+		background-color: white;
+	}
+	.navbar-toggler-icon {
+		background-color: #be2edd;
+	}
+
+	#nany {
+		color: white;
+	}
+
+	a {
+		color: white;
+	}
+
+	.babyShower {
+		font-family: 'Philosopher', sans-serif;
+	}
+}
+@media screen and (min-width: 960px) {
+	#formy {
+		width: 50%;
+		height: 100%;
+		margin-bottom: 2%;
+		padding: 2%;
+		margin: 0 auto;
+	}
+	#margy {
+		margin-bottom: 10%;
+	}
+	#splash {
+		padding-top: 0%;
+	}
+    #weddingBody {
+		background-position: center bottom;
+	}
+	#us {
+		background-position: center;
+		height: 700px;
+	}
+	#weddingSplash {
+		width: 30%;
+		padding-top: 5%;
+		margin-left: 5%;
+	}
+	#breath {
+		margin-top: 5%;
+	}
+	#breather {
+		margin-bottom: 5%;
+	}
+
+	.mainText {
+		text-align: left;
+		padding-top: 3%;
+		font-weight: bold;
+		color: #eb4d4b;
+		text-shadow: 2px 2px #130f40;
+	}
+	#countdown {
+		text-align: left;
+		padding-top: 0%;
+		font-weight: bold;
+		color: #eb4d4b;
+		text-shadow: 2px 2px #130f40;
+	}
+}

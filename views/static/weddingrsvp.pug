@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+  h1(class="mainText text-center") Rsvp for our Wedding Reception
+  hr
+  div(id="formy")
+    form(action="/rsvp/wedding" method="POST")
+      label(for="name") Full Name
+      br
+      input(type="text" name="name" class="form-control" required)
+      br
+      label(for="name") Email
+      br
+      input(type="email" class="form-control" name="email")
+      br
+      h4 Are you bringing any guests?
+      label(for="adultGuests") How many adults?
+      br
+      input(type="number" class="form-control" name="adultGuests")
+      br
+      label(for="childGuests") How many children?
+      br
+      input(type="number" class="form-control" name="childGuests")
+      br
+      button(class="btn btn-primary") Send RSVP
+  div(id="margy")

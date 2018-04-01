@@ -14,8 +14,12 @@ router.get('/babyshower', (req, res, next) => {
     res.render('static/babyshower');
 });
 
-router.get('/contactus', (req, res, next) => {
-    res.render('static/contactus');
+router.get('/babyrsvp', (req, res, next) => {
+    res.render('static/babyrsvp');
+});
+
+router.get('/weddingrsvp', (req, res, next) => {
+    res.render('static/weddingrsvp');
 });
 
 module.exports = router;
