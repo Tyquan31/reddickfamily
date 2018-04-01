@@ -5,22 +5,22 @@ block content
   hr
   div(id="formy")
     form(action="/rsvp/baby" method="POST")
-      label(for="name") Full Name
+      label(for="fullName") Full Name
       br
-      input(type="text" name="name" class="form-control" required)
+      input(type="text" name="fullName" class="form-control" required)
       br
       label(for="name") Email
       br
       input(type="email" class="form-control" name="email")
       br
       h4 Are you bringing any guests?
-      label(for="adultGuests") How many adults?
+      label(for="adults") How many adults?
       br
-      input(type="number" class="form-control" name="adultGuests")
+      input(type="number" class="form-control" name="adults")
       br
-      label(for="childGuests") How many children?
+      label(for="kids") How many children?
       br
-      input(type="number" class="form-control" name="childGuests")
+      input(type="number" class="form-control" name="kids")
       br
       button(class="btn btn-primary") Send RSVP
   div(id="margy")

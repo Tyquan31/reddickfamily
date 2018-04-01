@@ -8,28 +8,17 @@ const mongoose = require('mongoose');
 var session = require('express-session');
 const config = require('./config/config');
 
-const index = require('./routes/index');
-
-// mlab connection 
-// const mongoUri = 'mongodb://tyquan:Jamela17!@ds223509.mlab.com:23509/reddickfamily';
-// // mongoose mlab connection
-// mongoose.connect(mongoUri, {
-//   useMongoClient: true
-// });
-// //Get the default connection
-// var db = mongoose.connection;
-
-// //Bind connection to error event (to get notification of connection errors)
-// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
-// mongoose.Promise = require('bluebird');
-// mongoose.connect('mongodb://Tyquan:Jamela17!@ds223509.mlab.com:23509/reddickfamily', { 
-//   promiseLibrary: require('bluebird') 
-// })
-// .then(() =>  console.log('connection succesful'))
-// .catch((err) => console.error(err));
+mongoose.Promise = require('bluebird');
+mongoose.connect('mongodb://tyquan:Jamela17!@ds223509.mlab.com:23509/reddickfamily', { 
+  promiseLibrary: require('bluebird') 
+})
+.then(() =>  console.log('connection succesful'))
+.catch((err) => console.error(err));
 
 //mongodb://<dbuser>:<dbpassword>@ds223509.mlab.com:23509/reddickfamily
+
+const index = require('./routes/index');
+const rsvp = require('./routes/rsvp');
 
 const app = express();
 //app.use(compression());
@@ -55,6 +44,7 @@ app.use(session({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/rsvp', rsvp);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
