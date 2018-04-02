@@ -129,6 +129,8 @@
 	}
 	.navbar-brand {
 		color: white;
+		font-family: 'Dancing Script', cursive;
+		font-weight: bold;
 	}
 	.navbar-toggler {
 		background-color: white;
