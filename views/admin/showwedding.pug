@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1(class="mainText text-center") Wedding RSVPer 
+    span= wedding.fullName
+  hr
+  div(class="container")
+    div(class="row")
+      div(clss="col-md-12")
+        h3 Email: 
+          span= wedding.email
+    h2 Will Be Accompanied By:
+    div(class="row")
+      div(class="col-sm-6")
+        h4= wedding.kids 
+          span Children
+      div(class="col-sm-6")
+        h4= wedding.adults 
+          span Adults
+  div(id="margy")

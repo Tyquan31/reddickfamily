@@ -19,6 +19,8 @@ mongoose.connect('mongodb://tyquan:Jamela17!@ds223509.mlab.com:23509/reddickfami
 
 const index = require('./routes/index');
 const rsvp = require('./routes/rsvp');
+const auth = require('./routes/auth');
+const admin = require('./routes/admin');
 
 const app = express();
 //app.use(compression());
@@ -45,6 +47,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/rsvp', rsvp);
+app.use('/auth', auth);
+app.use('/admin', admin)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
